@@ -1,0 +1,19 @@
+* {
+  font-family: cursive;
+}
+.main {
+  background: linear-gradient(132deg, #003030, #3d3d3d);
+}
+.amount {
+  font-weight: 800;
+  color: #ababab;
+}
+.nav {
+  background: linear-gradient(167deg, teal 79%, aqua);
+}
+.block {
+  width: 50%;
+  height: 59vh;
+  /* background: linear-gradient(to right, blue -16%, aqua); */
+  background: linear-gradient(150deg, teal 58%, aqua);
+}

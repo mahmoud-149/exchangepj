@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>exchange</title>
+  </head>
+  <body class="d-flex flex-column">
+    <div class="nav w-100 d-flex justify-content-around align-items-center">
+      <img
+        class="img-fluid img-thumbnail figure-img col-1"
+        src="https://exchanger-nine.vercel.app/images/nav-banner.png"
+        alt=""
+      />
+      <h2 class="text-white">currency-converter</h2>
+    </div>
+    <div class="main d-flex align-items-center justify-content-center vh-100">
+      <div class="block bg- p-5 d-flex flex-column gap-3 rounded-5">
+        <div>
+          <h2 class="amount">Amount</h2>
+          <div class="d-flex flex-row justify-content-around w-100 input-group">
+            <input
+              type="text"
+              placeholder="1 by defult"
+              class="amountNumber form-control"
+            />
+            <button class="switchbtn btn input-group-text">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <!-- <button class="test">test</button> -->
+          <div class="from d-flex">
+            <img class="imgfrom" src="" alt="" />
+            <select name="" id="" class="selectFrom form-select"></select>
+          </div>
+          <div class="too d-flex">
+            <img class="imgTo" src="" alt="" />
+            <select name="" id="" class="selectTo form-select"></select>
+          </div>
+        </div>
+        <button class="convertbtn btn btn-dark">convert</button>
+        <h1 class="valueFromTo text-white text-center">1 AED = 1 AED</h1>
+      </div>
+    </div>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
