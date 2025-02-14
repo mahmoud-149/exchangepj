@@ -47,6 +47,11 @@ convrtbtn.addEventListener("click", () => {
   let selectedCountryto = selectTo.value;
   let amountNumber = document.querySelector(".amountNumber").value;
   amountNumber = amountNumber ? amountNumber : 1;
+  console.log(isNaN(amountNumber));
+  if (isNaN(amountNumber)) {
+    amountNumber = 1;
+  }
+
   // console.log(selectedCountryfrom);
 
   fetch(
@@ -60,8 +65,8 @@ convrtbtn.addEventListener("click", () => {
       // console.log(data.conversion_rates[data.base_code]);
       // console.log(data.conversion_rates[selectedCountryto]);
       displayValue.innerHTML = `${amountNumber} ${selectedCountryfrom} = ${
-        Math.round(todata * 100) / 100
+        Math.round(todata * 1000) / 1000
       } ${selectedCountryto}`;
     });
-  // console.log(amountNumber);
+  document.querySelector(".amountNumber").value = "";
 });
